@@ -3,7 +3,7 @@
     .group-info__left-box
       .group-info__left-box__current-group test
       .group-info__left-box__member-list Member：USER
-    %a(href="#")
+    = link_to "#" do
       .group-info__edit-btn Edit
   .message-list
     .message
@@ -29,6 +29,6 @@
       .input-box
         %input{type: "text", class: "input-box__text", placeholder: "type a message"}
         %label{class: "input-box__image"}
-          %i{class: "far fa-image"}
+          <i class="far fa-image"></i>
           %input{type: "file", class: "input-box__image__file"}
       %input{type: "submit", class: "submit-btn"}
