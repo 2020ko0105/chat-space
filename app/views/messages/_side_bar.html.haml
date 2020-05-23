@@ -2,13 +2,13 @@
   .Side-bar__user-name
     .top-items
       %p.top-items__user-name
-        USER
+        = current_user.name
       %ul.top-items__icons
         %li.top-items__icons-new
-          = link_to "#" do
+          = link_to do
             <i class="far fa-edit"></i>
         %li.top-items__icons-edit
-          = link_to "#" do
+          = link_to edit_user_path(current_user) do
             <i class="fas fa-cog"></i>
   .Side-bar__group-list
 
