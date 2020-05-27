@@ -45,7 +45,7 @@
     overflow: scroll;
     .message {
       padding-bottom: 46px;
-      &__upper-info {
+      .upper-info {
         display: flex;
         margin-bottom: 12px;
         &__talker {
@@ -73,7 +73,7 @@
     form {
       display: flex;
       .input-box {
-        width: 100%;
+        // width: 100%;
         position: relative;
         &__text {
           height: 50px;
